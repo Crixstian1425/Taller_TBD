@@ -13,12 +13,12 @@ export function App({ children }: { children?: React.ReactNode }) {
   useEffect(() => {
     // Inicialización del cliente de ConfigCat con tu SDK Key
     const client = configcat.getClient(
-      'configcat-sdk-1/jhbfCK88XEuIbxj9FBfJZw/4-w6RhtbyUydt3-PRLDccQ',
+      'configcat-sdk-1/FxzfCCrdHkaBpmJ_9GY4lw/JPdh31s--kWg1ona5-lGrg',
       configcat.PollingMode.AutoPoll,
       { pollIntervalSeconds: 60 }
     );
 
-    client.getValueAsync('isRestaEnabled', false).then((value) => {
+    client.getValueAsync('habilitarResta', false).then((value) => {
       setIsRestaEnabled(value);
     });
 
